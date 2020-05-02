@@ -1,0 +1,66 @@
+@import '../../css/utils.scss';
+
+.footer {
+	background: $darkBlack;
+	border-bottom: 1px solid $darkBlack;
+	width: 100%;
+	z-index: 4;
+	min-height: 100px;
+	color: $white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.valign {
+	justify-content: center;
+}
+
+.leftAlign {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 3%;
+}
+
+.rightAlign {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 3%;
+	align-items: center;
+	svg {
+		margin-right: 5px;
+	}
+}
+
+.footer__container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+@media (max-width: $medium-breakpoint) {
+	.footer__container {
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+
+	.leftAlign {
+		display: flex;
+		justify-content: center;
+		margin-top: 1%;
+	}
+
+	.rightAlign {
+		display: flex;
+		justify-content: center;
+		margin-top: 1%;
+		align-items: center;
+
+		svg {
+			margin-right: 10px;
+		}
+	}
+}

@@ -1,0 +1,76 @@
+@import '../../css/utils.scss';
+
+.header {
+	background: $darkBlack;
+	border-bottom: 1px solid $darkBlack;
+	width: 100%;
+	z-index: 4;
+	min-height: 65px;
+}
+
+.header_mobile {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.header_logo {
+	text-transform: uppercase;
+	color: $darkOrange;
+	display: flex;
+}
+
+.header_menu {
+	text-transform: capitalize;
+	color: $gray;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	div {
+		cursor: pointer;
+	}
+	div:hover {
+		color: $white;
+	}
+}
+
+.valign {
+	justify-content: center;
+}
+
+.chat {
+	background: $darkOrange;
+	color: $white;
+	border: 0;
+	border-radius: 16px;
+	width: 200px;
+	display: flex;
+	justify-content: space-evenly;
+	cursor: pointer;
+	span {
+		padding-top: 3px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.header {
+		max-height: 75px;
+	}
+}
+
+.header__container {
+	max-width: 1180px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+@media (min-width: 1025px) {
+	.header__container {
+		padding: 0 10px;
+	}
+}
